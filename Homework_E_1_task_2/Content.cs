@@ -7,7 +7,18 @@ namespace Homework_E_1_task_2
     class Content
     {
         private string bookContent;
+        public string BookContent
+        {
+            set
+            {
+                bookContent = value;
+            }
+        }
 
-        public string BookContent { get; set; }
+        public void Show()
+        {
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine($"Book Title: {bookContent}");
+        }
     }
 }

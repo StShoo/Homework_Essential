@@ -8,6 +8,18 @@ namespace Homework_E_1_task_2
     {
         private string bookTitle;
 
-        public string BookTitle { get; set; }
+        public string BookTitle 
+        {
+            set
+            {
+                bookTitle = value;
+            } 
+        }
+
+        public void Show()
+        {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine($"Book Title: {bookTitle}");
+        }
     }
 }

@@ -20,7 +20,10 @@ namespace Homework_E_1_task_2
             {
                 BookAuthor = bookAuthor
             };
-        }
 
+            title.Show();
+            author.Show();
+            content.Show();
+        }
     }
 }
