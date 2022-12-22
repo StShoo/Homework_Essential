@@ -6,7 +6,14 @@ namespace Homework_E_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            double side1, side2;
+
+            Rectangle rectangle = new Rectangle(side1, side2);
+        }
+
+        static void InitialaseSides(double side1, double side2)
+        {
+
         }
     }
 }
