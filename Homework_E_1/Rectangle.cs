@@ -28,7 +28,7 @@ namespace Homework_E_1
             return (side1 + side2) * 2;
         }
 
-        double Area 
+        public double Area 
         {
             get
             {
@@ -36,7 +36,7 @@ namespace Homework_E_1
             }
         }
 
-        double Perimeter
+        public double Perimeter
         {
             get
             {

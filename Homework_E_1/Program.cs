@@ -6,14 +6,49 @@ namespace Homework_E_1
     {
         static void Main(string[] args)
         {
-            double side1, side2;
+            Rectangle rectangle = new Rectangle(InitialaseSide(), InitialaseSide());
 
-            Rectangle rectangle = new Rectangle(side1, side2);
+            Console.WriteLine($"Area of the Rectangle is {rectangle.Area}");
+            Console.WriteLine($"Perimeter of the Rectangle is {rectangle.Perimeter}");
         }
 
-        static void InitialaseSides(double side1, double side2)
+        private static double InitialaseSide()
         {
+            double side;
+            do
+            {
+                Console.Write("Please enter side of rectangle: ");
+                side = ReadValue();
 
+                if (!IfValueMoreThanZero(side))
+                {
+                    Console.WriteLine("Side should be more than zero");
+                }
+
+            } while (!IfValueMoreThanZero(side));
+
+            return side;
+        }
+
+        private static double ReadValue()
+        {
+            do
+            {
+                try
+                {
+                    double number = Convert.ToDouble(Console.ReadLine());
+                    return number;
+                }
+                catch
+                {
+                    Console.WriteLine("Please enter only double values");
+                }
+            } while (true);
+        }
+
+        private static bool IfValueMoreThanZero(double value)
+        {
+            return value > 0;
         }
     }
 }
