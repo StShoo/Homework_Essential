@@ -10,9 +10,28 @@ namespace Homework_E_1_task_3
         private int secondCordinat;
         private string pointName;
 
-        public int FirstCordinat { get; }
-        public int SecondCordinat { get; }
-        public string PointName { get; }
+        public int FirstCordinat 
+        {
+            get
+            {
+                return firstCordinat;
+            }
+        }
+
+        public int SecondCordinat
+        {
+            get
+            {
+                return secondCordinat;
+            }
+        }
+        public string PointName
+        {
+            get
+            {
+                return pointName;
+            }
+        }
 
         public Point(int firstCordinat, int secondCordinat, string pointName)
         {
