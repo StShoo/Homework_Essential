@@ -6,7 +6,13 @@ namespace Homework_E_3_task_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Vehicle plane = new Plane();
+            Vehicle car = new Car();
+            Vehicle ship = new Ship();
+
+            plane.PrintInfo();
+            car.PrintInfo();
+            ship.PrintInfo();
         }
     }
 }
