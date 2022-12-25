@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework_E_3_task_1", "Home
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_E_3_task_2", "..\Homework_E_3_task_2\Homework_E_3_task_2.csproj", "{E2593A58-876C-41AC-861C-E8C6A6604858}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_E_3_task3", "..\Homework_E_3_task3\Homework_E_3_task3.csproj", "{05E27187-7BBF-4656-94EC-3354319ADE5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_E_3_task_3", "..\Homework_E_3_task3\Homework_E_3_task_3.csproj", "{05E27187-7BBF-4656-94EC-3354319ADE5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
