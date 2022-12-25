@@ -6,7 +6,15 @@ namespace Homework_E_3_task_4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.Write("Enter string to print: ");
+
+            Printer coloredPrinter = new ColoredPrinter();
+            coloredPrinter.Print(Console.ReadLine());
+
+            Console.Write("Enter string to print: ");
+
+            Printer regPrinter = new Printer();
+            regPrinter.Print(Console.ReadLine());
         }
     }
 }
