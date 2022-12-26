@@ -4,7 +4,15 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            IPlayable playerPlay = new Player();
+            playerPlay.Play();
+            playerPlay.Pause();
+            playerPlay.Stop();
+
+            IRecodable playerRecord = new Player();
+            playerRecord.Record();
+            playerRecord.Pause();
+            playerRecord.Stop();
         }
     }
 }
