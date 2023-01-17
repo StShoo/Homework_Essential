@@ -11,7 +11,25 @@
                 "Green = 2,\r\n" +
                 "Blue = 3,\r\n" +
                 "Yellow = 4");
-            int color = Console.ReadLine();
+            int color = ReadIntValue();
+
+            Printer.Print(textToPrint, color);
+        }
+
+        private static int ReadIntValue()
+        {
+            do
+            {
+                try
+                {
+                    int number = Convert.ToInt32(Console.ReadLine());
+                    return number;
+                }
+                catch
+                {
+                    Console.WriteLine("Please enter only int values");
+                }
+            } while (true);
         }
     }
 
@@ -19,7 +37,7 @@
     {
         public static void Print(string stroka, int color)
         {
-            Console.ForegroundColor = (ConsoleColor)color;
+            Console.ForegroundColor = (ConsoleColor)(EnumColors)color;
             Console.WriteLine(stroka);
         }
     }
