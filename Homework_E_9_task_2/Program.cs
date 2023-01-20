@@ -10,11 +10,20 @@
             Delegats[] delegatsArr = new Delegats[] {getDelegat(), getDelegat(), getDelegat(), 
                 getDelegat(), getDelegat(), getDelegat(), getDelegat()};
 
+            for (int i = 0; i < delegatsArr.Length; i++)
+            {
+                Console.WriteLine($"Delegat {i+1} is {delegatsArr[i].Invoke()}");
+            }
+
             MidValueDelegat midValueDelegat;
             double sum = 0;
 
-            midValueDelegat = delegate { for(int i = 0; i < delegatsArr.Length; i++) {double num = delegatsArr[i]; sum += num; };
+            midValueDelegat = delegate { 
+                for(int i = 0; i < delegatsArr.Length; i++) {
+                    double num = delegatsArr[i].Invoke();
+                    sum += num; };
                 return sum / delegatsArr.Length; };
+            Console.WriteLine($"Midle value will be {midValueDelegat.Invoke()}");
         }
 
         static Delegats getDelegat()
@@ -29,7 +38,7 @@
         public static int RandomeValue()
         {
             Random rnd = new Random();
-            return rnd.Next();
+            return rnd.Next(10);
         }
     }
 }
