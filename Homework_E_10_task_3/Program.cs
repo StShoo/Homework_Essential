@@ -1,4 +1,6 @@
-﻿namespace Homework_E_10_task_1
+﻿using System.Collections.Generic;
+
+namespace Homework_E_10_task_3
 {
     interface IListArray<T>
     {
@@ -7,7 +9,7 @@
         public int Len();
     }
 
-    class List<T>: IListArray<T>
+    class List<T> : IListArray<T>
     {
         T[]? mylist;
         readonly int listLength;
@@ -17,6 +19,11 @@
         {
             this.listLength = listLength;
             mylist = new T[listLength];
+        }
+
+        public static T[] GetArray(this List<T> list)
+        {
+            return list.mylist;
         }
 
         public void Add(T valueToAdd)

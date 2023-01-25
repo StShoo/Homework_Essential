@@ -22,22 +22,22 @@
         }
         public void OpenBag()
         {
-            if(typeof(T) == typeof(Human))
+            if(typeof(T) == typeof(Monster))
             {
-                if (!humanFlag)
+                if (!monsterFlag)
                 {
-                    humanFlag = true;
+                    monsterFlag = true;
                     Console.WriteLine("You are monster. You get coal.");
                 }
                 else
                 {
                     Console.WriteLine("You are monster. You already got youre present.");
                 }
-            } else if(typeof(T) == typeof(Monster))
+            } else if(typeof(T) == typeof(Human))
             {
-                if (!monsterFlag)
+                if (!humanFlag)
                 {
-                    monsterFlag = true;
+                    humanFlag = true;
                     Console.WriteLine("You are humen. You get chocolate.");
                 }
                 else
