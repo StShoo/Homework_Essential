@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Homework_E_13_task_2
+﻿/*namespace Homework_E_13_task_2
 {
     class Program
     {
@@ -96,4 +90,4 @@ namespace Homework_E_13_task_2
             }
         }
     }
-}
+}*/
