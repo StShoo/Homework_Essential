@@ -21,16 +21,22 @@ namespace Homework_E_14_task_1
 
             Console.WriteLine($"Value of 2 is {myCollection.ValueOf(2)}");
             Console.WriteLine($"Length is {myCollection.Len()}");
+
+            int[] array = myCollection.GetArray();
+            for(int i = 0; i<array.Length; i++)
+            {
+                Console.WriteLine(array[i]);
+            }
         }
     }
 
-    /*public static class ExtentionClass
+    public static class ExtentionClass
     {
         public static T[] GetArray<T>(this IEnumerable<T> list)
         {
             return list.ToArray();
         }
-    }*/
+    }
 
     public class MyList<T>: IEnumerable<T>, IEnumerable, IEnumerator<T>
     {
