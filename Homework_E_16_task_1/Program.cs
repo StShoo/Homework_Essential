@@ -39,6 +39,11 @@
             return (side1 == b.side1) && (side2 == b.side2) && (side3 == b.side3) && (side4 == b.side4);
         }
 
+        public override int GetHashCode()
+        {
+            return this.GetHashCode();
+        }
+
         public override string ToString()
         {
             return $"Block {this.GetType().ToString()}:\n" +
