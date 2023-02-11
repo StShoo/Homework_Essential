@@ -48,7 +48,7 @@ namespace Homework_E_17_task_1
                 },
                 new BuyerData
                 {
-                    NameSurname = "Mikita Vennichenko",
+                    NameSurname = "Sosura Podorojko",
                     Model = "C454B",
                     PhoneNumber = "09698853611"
                 }
